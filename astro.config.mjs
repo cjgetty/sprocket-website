@@ -3,6 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cjgetty.github.io',
-  base: '/sprocket-website',
+  site: 'https://cjgetty.github.io/sprocket-website',
 });
