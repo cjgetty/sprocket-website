@@ -8,9 +8,703 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Sprocket - Professional Film Photography App</title>
+		<meta name="description" content="Sprocket is the ultimate film photography companion app with light metering, shot logging, and professional tools for analog photographers." />
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<header>
+				<div class="container">
+					<h1>Sprocket</h1>
+					<p class="tagline">Professional Film Photography Companion</p>
+				</div>
+			</header>
+
+			<section class="hero">
+				<div class="container">
+					<div class="hero-content">
+						<h2>The Ultimate Tool for Film Photographers</h2>
+						<p>Sprocket combines precision light metering, comprehensive shot logging, and professional tools in one elegant app designed specifically for analog photography enthusiasts.</p>
+						
+						<div class="download-section">
+							<a href="#" class="app-store-btn">
+								<img src="/app-store-badge.svg" alt="Download on the App Store" />
+							</a>
+							<p class="coming-soon">Coming Soon to the App Store</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features">
+				<div class="container">
+					<h2>Features</h2>
+					<div class="features-grid">
+						<div class="feature" data-feature="metering">
+							<div class="feature-icon">📸</div>
+							<h3>Precision Light Metering</h3>
+							<p>Advanced light metering with spot, center-weighted, and matrix modes for perfect exposure every time.</p>
+							<div class="feature-details" id="metering-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-metering.png" alt="Light Metering Interface" />
+								</div>
+								<div class="feature-description">
+									<h4>Professional Light Metering</h4>
+									<p>Sprocket's advanced light meter uses your phone's camera sensor to provide accurate exposure readings. Choose from multiple metering modes:</p>
+									<ul>
+										<li><strong>Spot Metering:</strong> Precise readings from a small area of your composition</li>
+										<li><strong>Center-weighted:</strong> Emphasizes the center while considering the entire frame</li>
+										<li><strong>Matrix Mode:</strong> Analyzes multiple zones for optimal overall exposure</li>
+									</ul>
+									<p>Real-time exposure compensation and ISO adjustment help you nail the perfect exposure for any lighting condition.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature" data-feature="logging">
+							<div class="feature-icon">📝</div>
+							<h3>Shot Logging</h3>
+							<p>Comprehensive logging system to track every shot with metadata, notes, and location data.</p>
+							<div class="feature-details" id="logging-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-logging.png" alt="Shot Logging Interface" />
+								</div>
+								<div class="feature-description">
+									<h4>Comprehensive Shot Documentation</h4>
+									<p>Never forget the details of your best shots. Sprocket automatically captures and organizes:</p>
+									<ul>
+										<li><strong>Exposure Settings:</strong> Aperture, shutter speed, and ISO values</li>
+										<li><strong>Camera Data:</strong> Lens focal length, camera model, and format</li>
+										<li><strong>Environmental Info:</strong> GPS location, weather conditions, and time</li>
+										<li><strong>Personal Notes:</strong> Your thoughts, composition notes, and development plans</li>
+									</ul>
+									<p>Export your shot logs to CSV or share them with your lab for consistent development.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature" data-feature="filmstock">
+							<div class="feature-icon">🎞️</div>
+							<h3>Film Stock Database</h3>
+							<p>Extensive database of film stocks with reciprocity failure compensation and characteristic curves.</p>
+							<div class="feature-details" id="filmstock-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-filmstock.png" alt="Film Stock Database" />
+								</div>
+								<div class="feature-description">
+									<h4>Complete Film Stock Reference</h4>
+									<p>Access detailed information for hundreds of film stocks, both current and discontinued:</p>
+									<ul>
+										<li><strong>Reciprocity Data:</strong> Automatic exposure compensation for long exposures</li>
+										<li><strong>Characteristic Curves:</strong> Understand how each film responds to light</li>
+										<li><strong>Color Profiles:</strong> Preview color rendition and contrast characteristics</li>
+										<li><strong>Development Notes:</strong> Recommended developers and processing times</li>
+									</ul>
+									<p>Make informed decisions about which film stock will best capture your vision.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature" data-feature="calculator">
+							<div class="feature-icon">📐</div>
+							<h3>Lens Calculator</h3>
+							<p>Professional lens calculations including depth of field, hyperfocal distance, and field of view.</p>
+							<div class="feature-details" id="calculator-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-calculator.png" alt="Lens Calculator Interface" />
+								</div>
+								<div class="feature-description">
+									<h4>Precision Optical Calculations</h4>
+									<p>Professional-grade calculations for perfect focus and composition planning:</p>
+									<ul>
+										<li><strong>Depth of Field:</strong> Calculate near and far focus limits for any aperture</li>
+										<li><strong>Hyperfocal Distance:</strong> Maximize depth of field for landscape photography</li>
+										<li><strong>Field of View:</strong> Compare different focal lengths and formats</li>
+										<li><strong>Magnification Ratios:</strong> Precise calculations for macro photography</li>
+									</ul>
+									<p>Visual guides help you understand how aperture and distance affect your image.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature" data-feature="overlay">
+							<div class="feature-icon">🔍</div>
+							<h3>Camera Frame Overlay</h3>
+							<p>Real-time frame overlays for different camera formats and focal lengths on your phone's camera.</p>
+							<div class="feature-details" id="overlay-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-overlay.png" alt="Frame Overlay Feature" />
+								</div>
+								<div class="feature-description">
+									<h4>Accurate Frame Composition</h4>
+									<p>See exactly what your film camera will capture using your phone's viewfinder:</p>
+									<ul>
+										<li><strong>Multiple Formats:</strong> 35mm, medium format, large format overlays</li>
+										<li><strong>Focal Length Simulation:</strong> Preview different lens perspectives</li>
+										<li><strong>Aspect Ratio Guides:</strong> Perfect for planning panoramic or square compositions</li>
+										<li><strong>Real-time Preview:</strong> Live overlay on your phone's camera feed</li>
+									</ul>
+									<p>Compose your shots with confidence before loading that precious film.</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature" data-feature="location">
+							<div class="feature-icon">📍</div>
+							<h3>Location Tracking</h3>
+							<p>Automatic location tagging with GPS coordinates and optional weather data integration.</p>
+							<div class="feature-details" id="location-details">
+								<div class="feature-screenshot">
+									<img src="/placeholder-location.png" alt="Location Tracking Interface" />
+								</div>
+								<div class="feature-description">
+									<h4>Comprehensive Location Data</h4>
+									<p>Never lose track of where your best shots were taken:</p>
+									<ul>
+										<li><strong>GPS Coordinates:</strong> Precise latitude and longitude for every shot</li>
+										<li><strong>Weather Integration:</strong> Temperature, humidity, and lighting conditions</li>
+										<li><strong>Location Names:</strong> Automatic city, landmark, and address detection</li>
+										<li><strong>Map Integration:</strong> Visual shot locations on interactive maps</li>
+									</ul>
+									<p>Build a comprehensive archive of your photography locations and conditions.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta">
+				<div class="container">
+					<h2>Ready to Elevate Your Film Photography?</h2>
+					<p>Join the community of professional and enthusiast film photographers using Sprocket.</p>
+					<a href="#" class="cta-button">Get Notified When Available</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2024 Sprocket. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Modal for feature details -->
+		<div id="feature-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal-body">
+					<div class="modal-screenshot">
+						<img id="modal-screenshot" src="" alt="" />
+					</div>
+					<div class="modal-description">
+						<h3 id="modal-title"></h3>
+						<div id="modal-details"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const modal = document.getElementById('feature-modal');
+				const closeBtn = document.querySelector('.close');
+				const modalTitle = document.getElementById('modal-title');
+				const modalDetails = document.getElementById('modal-details');
+				const modalScreenshot = document.getElementById('modal-screenshot');
+
+				// Feature data
+				const featureData = {
+					metering: {
+						title: 'Precision Light Metering',
+						screenshot: '/placeholder-metering.png',
+						content: `
+							<h4>Professional Light Metering</h4>
+							<p>Sprocket's advanced light meter uses your phone's camera sensor to provide accurate exposure readings. Choose from multiple metering modes:</p>
+							<ul>
+								<li><strong>Spot Metering:</strong> Precise readings from a small area of your composition</li>
+								<li><strong>Center-weighted:</strong> Emphasizes the center while considering the entire frame</li>
+								<li><strong>Matrix Mode:</strong> Analyzes multiple zones for optimal overall exposure</li>
+							</ul>
+							<p>Real-time exposure compensation and ISO adjustment help you nail the perfect exposure for any lighting condition.</p>
+						`
+					},
+					logging: {
+						title: 'Shot Logging',
+						screenshot: '/placeholder-logging.png',
+						content: `
+							<h4>Comprehensive Shot Documentation</h4>
+							<p>Never forget the details of your best shots. Sprocket automatically captures and organizes:</p>
+							<ul>
+								<li><strong>Exposure Settings:</strong> Aperture, shutter speed, and ISO values</li>
+								<li><strong>Camera Data:</strong> Lens focal length, camera model, and format</li>
+								<li><strong>Environmental Info:</strong> GPS location, weather conditions, and time</li>
+								<li><strong>Personal Notes:</strong> Your thoughts, composition notes, and development plans</li>
+							</ul>
+							<p>Export your shot logs to CSV or share them with your lab for consistent development.</p>
+						`
+					},
+					filmstock: {
+						title: 'Film Stock Database',
+						screenshot: '/placeholder-filmstock.png',
+						content: `
+							<h4>Complete Film Stock Reference</h4>
+							<p>Access detailed information for hundreds of film stocks, both current and discontinued:</p>
+							<ul>
+								<li><strong>Reciprocity Data:</strong> Automatic exposure compensation for long exposures</li>
+								<li><strong>Characteristic Curves:</strong> Understand how each film responds to light</li>
+								<li><strong>Color Profiles:</strong> Preview color rendition and contrast characteristics</li>
+								<li><strong>Development Notes:</strong> Recommended developers and processing times</li>
+							</ul>
+							<p>Make informed decisions about which film stock will best capture your vision.</p>
+						`
+					},
+					calculator: {
+						title: 'Lens Calculator',
+						screenshot: '/placeholder-calculator.png',
+						content: `
+							<h4>Precision Optical Calculations</h4>
+							<p>Professional-grade calculations for perfect focus and composition planning:</p>
+							<ul>
+								<li><strong>Depth of Field:</strong> Calculate near and far focus limits for any aperture</li>
+								<li><strong>Hyperfocal Distance:</strong> Maximize depth of field for landscape photography</li>
+								<li><strong>Field of View:</strong> Compare different focal lengths and formats</li>
+								<li><strong>Magnification Ratios:</strong> Precise calculations for macro photography</li>
+							</ul>
+							<p>Visual guides help you understand how aperture and distance affect your image.</p>
+						`
+					},
+					overlay: {
+						title: 'Camera Frame Overlay',
+						screenshot: '/placeholder-overlay.png',
+						content: `
+							<h4>Accurate Frame Composition</h4>
+							<p>See exactly what your film camera will capture using your phone's viewfinder:</p>
+							<ul>
+								<li><strong>Multiple Formats:</strong> 35mm, medium format, large format overlays</li>
+								<li><strong>Focal Length Simulation:</strong> Preview different lens perspectives</li>
+								<li><strong>Aspect Ratio Guides:</strong> Perfect for planning panoramic or square compositions</li>
+								<li><strong>Real-time Preview:</strong> Live overlay on your phone's camera feed</li>
+							</ul>
+							<p>Compose your shots with confidence before loading that precious film.</p>
+						`
+					},
+					location: {
+						title: 'Location Tracking',
+						screenshot: '/placeholder-location.png',
+						content: `
+							<h4>Comprehensive Location Data</h4>
+							<p>Never lose track of where your best shots were taken:</p>
+							<ul>
+								<li><strong>GPS Coordinates:</strong> Precise latitude and longitude for every shot</li>
+								<li><strong>Weather Integration:</strong> Temperature, humidity, and lighting conditions</li>
+								<li><strong>Location Names:</strong> Automatic city, landmark, and address detection</li>
+								<li><strong>Map Integration:</strong> Visual shot locations on interactive maps</li>
+							</ul>
+							<p>Build a comprehensive archive of your photography locations and conditions.</p>
+						`
+					}
+				};
+
+				// Add click event listeners to all feature cards
+				const features = document.querySelectorAll('.feature');
+				features.forEach(feature => {
+					feature.addEventListener('click', function() {
+						const featureId = this.getAttribute('data-feature');
+						const data = featureData[featureId];
+						
+						if (data) {
+							modalTitle.textContent = data.title;
+							modalDetails.innerHTML = data.content;
+							modalScreenshot.src = data.screenshot;
+							modalScreenshot.alt = data.title + ' Interface';
+							modal.classList.add('show');
+							document.body.style.overflow = 'hidden';
+						}
+					});
+				});
+
+				// Close modal when clicking the X
+				closeBtn.addEventListener('click', function() {
+					modal.classList.remove('show');
+					document.body.style.overflow = 'auto';
+				});
+
+				// Close modal when clicking outside of it
+				window.addEventListener('click', function(event) {
+					if (event.target === modal) {
+						modal.classList.remove('show');
+						document.body.style.overflow = 'auto';
+					}
+				});
+
+				// Close modal with escape key
+				document.addEventListener('keydown', function(event) {
+					if (event.key === 'Escape' && modal.classList.contains('show')) {
+						modal.classList.remove('show');
+						document.body.style.overflow = 'auto';
+					}
+				});
+			});
+		</script>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+			:root {
+				--color-black: #000000;
+				--color-white: #FFFFFF;
+				--color-beige: #BEB7A4;
+				--color-orange-light: #FF7F11;
+				--color-orange-dark: #FF3F00;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				line-height: 1.6;
+				color: var(--color-black);
+				background: var(--color-white);
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+
+			header {
+				background: var(--color-black);
+				color: var(--color-white);
+				padding: 2rem 0;
+				text-align: center;
+			}
+
+			header h1 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 3rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+
+			.tagline {
+				font-size: 1.2rem;
+				opacity: 0.9;
+				color: var(--color-beige);
+			}
+
+			.hero {
+				padding: 4rem 0;
+				background: var(--color-white);
+			}
+
+			.hero-content {
+				text-align: center;
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.hero h2 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				color: var(--color-black);
+				font-weight: 600;
+			}
+
+			.hero p {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+				color: var(--color-beige);
+			}
+
+			.download-section {
+				margin-top: 2rem;
+			}
+
+			.app-store-btn {
+				display: inline-block;
+				margin-bottom: 1rem;
+				transition: transform 0.3s ease;
+			}
+
+			.app-store-btn:hover {
+				transform: translateY(-2px);
+			}
+
+			.app-store-btn img {
+				height: 60px;
+			}
+
+			.coming-soon {
+				color: var(--color-beige);
+				font-style: italic;
+			}
+
+			.feature {
+				text-align: center;
+				padding: 2rem;
+				border-radius: 10px;
+				background: var(--color-white);
+				border: 2px solid transparent;
+				transition: all 0.3s ease;
+				cursor: pointer;
+			}
+
+			.feature:hover {
+				transform: translateY(-5px);
+				border-color: var(--color-orange-light);
+			}
+
+			.feature-details {
+				display: none;
+			}
+
+			/* Modal Styles */
+			.modal {
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				backdrop-filter: blur(5px);
+				display: none;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.modal.show {
+				display: flex;
+			}
+
+			.modal-content {
+				background-color: var(--color-white);
+				padding: 0;
+				border-radius: 15px;
+				width: 90%;
+				max-width: 900px;
+				max-height: 80vh;
+				overflow: hidden;
+				position: relative;
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+			}
+
+			.close {
+				color: var(--color-beige);
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				font-size: 28px;
+				font-weight: bold;
+				cursor: pointer;
+				z-index: 1001;
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.9);
+				transition: all 0.3s ease;
+			}
+
+			.close:hover {
+				color: var(--color-black);
+				background: var(--color-white);
+			}
+
+			.modal-body {
+				display: flex;
+				min-height: 500px;
+			}
+
+			.modal-screenshot {
+				flex: 1;
+				background: #f8f9fa;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 2rem;
+			}
+
+			.modal-screenshot img {
+				max-width: 100%;
+				max-height: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			.modal-description {
+				flex: 1;
+				padding: 2rem;
+				overflow-y: auto;
+			}
+
+			.modal-description h3 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 1.8rem;
+				margin-bottom: 1rem;
+				color: var(--color-black);
+				font-weight: 600;
+			}
+
+			.modal-description h4 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+				color: var(--color-orange-dark);
+				font-weight: 500;
+			}
+
+			.modal-description p {
+				margin-bottom: 1rem;
+				line-height: 1.6;
+				color: var(--color-black);
+			}
+
+			.modal-description ul {
+				margin: 1rem 0;
+				padding-left: 1.5rem;
+			}
+
+			.modal-description li {
+				margin-bottom: 0.5rem;
+				color: var(--color-black);
+				line-height: 1.5;
+			}
+
+			.modal-description strong {
+				color: var(--color-orange-dark);
+			}
+
+			@media (max-width: 768px) {
+				.modal-content {
+					margin: 2% auto;
+					width: 95%;
+					max-height: 90vh;
+				}
+
+				.modal-body {
+					flex-direction: column;
+					min-height: auto;
+				}
+
+				.modal-screenshot {
+					padding: 1rem;
+				}
+
+				.modal-description {
+					padding: 1rem 2rem 2rem 2rem;
+				}
+
+				.modal-description h3 {
+					font-size: 1.5rem;
+				}
+
+				.modal-description h4 {
+					font-size: 1.2rem;
+				}
+			}
+
+			.features {
+				padding: 4rem 0;
+				background: #fafafa;
+			}
+
+			.features h2 {
+				text-align: center;
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 2.5rem;
+				margin-bottom: 3rem;
+				color: var(--color-black);
+				font-weight: 600;
+			}
+
+			.features-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+
+
+			.feature-icon {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+
+			.feature h3 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 1.2rem;
+				margin-bottom: 1rem;
+				color: var(--color-black);
+				font-weight: 500;
+			}
+
+			.feature p {
+				color: var(--color-beige);
+			}
+
+			.cta {
+				background: linear-gradient(135deg, var(--color-orange-light) 0%, var(--color-orange-dark) 100%);
+				color: var(--color-white);
+				padding: 4rem 0;
+				text-align: center;
+			}
+
+			.cta h2 {
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				font-weight: 600;
+			}
+
+			.cta p {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+
+			.cta-button {
+				display: inline-block;
+				background: var(--color-white);
+				color: var(--color-orange-dark);
+				padding: 1rem 2rem;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: transform 0.3s ease;
+			}
+
+			.cta-button:hover {
+				transform: translateY(-2px);
+			}
+
+			footer {
+				background: var(--color-black);
+				color: var(--color-white);
+				padding: 2rem 0;
+				text-align: center;
+			}
+
+			@media (max-width: 768px) {
+				header h1 {
+					font-size: 2rem;
+				}
+
+				.hero h2 {
+					font-size: 2rem;
+				}
+
+				.features h2, .cta h2 {
+					font-size: 2rem;
+				}
+
+				.features-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</body>
 </html>
